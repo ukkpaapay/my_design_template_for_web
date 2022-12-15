@@ -1,0 +1,305 @@
+.body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.rhine-lab {
+    animation: 1s ease-out 0s slideDownFromUp;
+}
+
+.rhine-lab-logo {
+    background-image: url('./img/rhine-lab-logo.png');
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    margin: auto;
+}
+
+.rhine-lab-name {
+    display: flex;
+    justify-content: space-between;
+    animation: 2s ease-out 0s fadeIn;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.contant {
+    width: 100%;
+    height: 100vh;
+    background-color: #eeeeee;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.rhine-lab-title {
+    align-self: flex-start;
+    margin-top: 75px;
+    margin-left: 50px;
+    z-index: 999;
+    animation-delay: 2s;
+}
+
+.rhine-lab-title1 {
+    animation: 2s ease-out 0s 1 rhine-lab-title1;
+}
+
+.rhine-lab-title2 {
+    animation: 2s ease-out 0s 1 rhine-lab-title2;
+}
+
+.rhine-lab-title3 {
+    animation: 2s ease-out 0s 1 rhine-lab-title3;
+}
+
+.powered-by {
+    align-self: flex-end;
+    margin-bottom: 75px;
+    margin-right: 50px;
+    z-index: 999;
+    animation: 2s ease-out 0s 1 rhine-lab-title2;
+}
+
+.singin-form {
+    text-align: end;
+    margin: auto 25px;
+    animation: 3s ease-out 0s fadeIn;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear {
+    display: none;
+}
+
+.rhine-lab-text-1 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 0;
+    margin-bottom: 25px;
+}
+
+.rhine-lab-text-2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0;
+    margin-bottom: 15px;
+}
+
+.rhine-lab-text-3 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 0;
+}
+
+.rhine-lab-text-4 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 0;
+}
+
+.rhine-lab-text-5 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 0;
+    margin-bottom: 25px;
+}
+
+@keyframes rhine-lab-title1 {
+
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    60% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rhine-lab-title2 {
+
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    63% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rhine-lab-title3 {
+
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    65% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFromUp {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.circle1 {
+    height: 700px;
+    width: 700px;
+    border: solid 3px;
+    border-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+
+.circle2 {
+    height: 650px;
+    width: 650px;
+    border: solid 5px;
+    border-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    animation: 5s ease-in-out 0s infinite rotating1;
+}
+
+.circle3 {
+    height: 200px;
+    width: 200px;
+    border: solid 3px;
+    border-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    animation: 7s ease-in-out 0s infinite rotating2;
+}
+
+.circle4 {
+    height: 25px;
+    width: 25px;
+    background-color: #ffca41;
+    border-radius: 50%;
+    display: flex;
+}
+
+.circle5 {
+    height: 30px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+}
+
+.circle6 {
+    height: 100px;
+    width: 100px;
+    border: solid 3px;
+    border-color: #000000;
+    border-radius: 50%;
+    margin-right: -200px;
+    margin-left: -200px;
+}
+
+.load {
+    animation: 1s ease-out 0s zoomout;
+}
+
+@keyframes rotating1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes zoomout {
+    0% {
+        transform: scale(4, 4);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
